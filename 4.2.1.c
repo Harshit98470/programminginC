@@ -1,0 +1,26 @@
+//Harshit patil 25070521104
+
+
+#include <stdio.h>
+
+union test {
+	int x;
+int y;
+};
+
+	// write your code here
+int main()
+{
+	union test t; 
+	printf("x: ");
+	scanf("%d", &t.x);
+	
+	printf("After making x = %d:\nx= %d y= %d\n", t.x,t.x,t.y         );
+	printf("y: ");
+	scanf("%d", &t.y);
+
+
+
+	printf("After making y = %d:\nx= %d y= %d", t.y, t.x, t.y            );
+ 	return 0;
+}
